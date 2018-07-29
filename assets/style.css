@@ -13,3 +13,8 @@ body {
       padding: 20px;
       border-radius: 10px;
 };
+
+.card-image {
+    height: 200px; /* Your height here */
+    overflow: hidden;
+}
