@@ -1,20 +1,46 @@
 body {
     min-height: 200vh;
     background-color: beige;
-};
+}
 
-.parallax-container {
-    height: 300px;
-  };
+#hero-par {
+    height: 600px;
+    overflow: hidden;
+    background-size: cover;
+}
 
 .thin-text {
       font-weight: 300;
-      background: rgba(96, 125, 139, .4);
       padding: 20px;
       border-radius: 10px;
-};
+}
 
 .card-image {
     height: 200px; /* Your height here */
     overflow: hidden;
+}
+
+#about-image {
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    left: 55%;
+    animation: slide 2s 1;
+}
+@keyframes slide {
+    from { left: -150%; }
+    to { left: 55%; }
+}
+
+#services-list {
+    font-size: 20px
+}
+
+.icon {
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.about-text {
+    font-size: 15px
 }
