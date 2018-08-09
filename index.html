@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Gooogle Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <!-- Devicon CDN -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <!-- Google Icons CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS CDN -->
@@ -16,290 +22,199 @@
     <title>Document</title>
 </head>
 
-<body class="body">
+<body>
 
     <!-- NAVBAR -->
-    <nav>
-        <div class="nav-wrapper grey darken-3">
-            <a href="./index.html" class="brand-logo">Jacob Cadiente</a>
+    <nav class="nav-extended #000000 black">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Jacob Cadiente</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="#aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
             </ul>
         </div>
     </nav>
-    <!-- MOBILE SIDENAV -->
+
+    <!-- SIDENAV -->
     <ul class="sidenav" id="mobile-demo">
         <li>
-            <a class="grey-text text-lighten-3" href="#">About Me</a>
+            <a href="#aboutme">About Me</a>
         </li>
         <li>
-            <a class="grey-text text-lighten-3" href="#">Projects</a>
+            <a href="#service">Services</a>
         </li>
         <li>
-            <a class="grey-text text-lighten-3" href="#">Contact</a>
+            <a href="#portfolio-header">Portfolio</a>
         </li>
         <li>
-            <a class="grey-text text-lighten-3" href="#!">Services</a>
+            <a href="#contact-header">Contact</a>
         </li>
     </ul>
 
-    <!-- HERO SECTION -->
-    <div id="hero-par" class="parallax-container valign-wrapper">
+    <!-- INTRODUCTION -->
+
+
+    <!-- PARALLAX DIVIDER -->
+    <div class="parallax-container">
         <div class="container">
             <div class="row">
-                <div class="col l8 s12 white-text">
-                    <h4 class="thin-text left-align valign">Full Stack Web Developer @ Orlando, FL.</h4>
-                    <div class="divider"></div>
+                <div class="col l12 m12 s12">
+                    <h1 id="job-title">Full Stack Development</h1>
+                    <div id="page-links" class="nav-content hide-on-med-and-down">
+                        <a class="page-link waves-effect waves-light btn #000000 black" href="#aboutme">About Me</a>
+                        <a class="page-link waves-effect waves-light btn #000000 black" href="#service">Services</a>
+                        <a class="page-link waves-effect waves-light btn #000000 black" href="#portfolio-header">Portfolio</a>
+                        <a class="page-link waves-effect waves-light btn #000000 black" href="#contact-header">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="parallax">
-            <img src="./assets/images/par-image.jpeg">
+            <img src="./assets/images/parallax1.jpeg">
         </div>
     </div>
 
-    <!-- ABOUT ME SECTION -->
+    <!-- ABOUT ME/TOOLS SECTION -->
+
     <div id="aboutme" class="container">
-        <div class="row">
-            <h2 class="thin-text grey-text text-darken-2">About Me</h2>
-            <div class="divider"></div>
-        </div>
+        <h1 id="about-header">About Me</h1>
+        <div class="divider"></div>
         <div class="row">
             <div class="col l6 m12 s12">
-                <img id="about-image" class="left responsive-img" src="./assets/images/profile-pic.jpg" alt="profile suit pic" style="margin-right: 20px;">
-
-                <p class="flow-text">Hello my name is Jacob Cadiente! I am a student at the UCF Coding Bootcamp for Full Stack Web Development.
-                    I offer services such as</p>
-                <ul id="services-list">
-                    <li>Front End UI/UX design</li>
-                    <li>Back End Development</li>
-                    <li>Database Architecture</li>
-                    <li>Hosting/Site Maintenance.</li>
-                </ul>
-
-                <h5 class="thin-text grey-text text-darken-2">Tools</h5>
-                <div class="divider"></div>
-                <div class="row">
-                    <div class="col l12">
-                        <i class="devicon-html5-plain-wordmark colored icon"></i>
-                        <i class="devicon-css3-plain-wordmark colored icon"></i>
-                        <i class="devicon-javascript-plain colored icon"></i>
-                        <i class="devicon-react-original-wordmark colored icon"></i>
-                        <i class="devicon-bootstrap-plain-wordmark colored icon"></i>
-                        <i class="devicon-nodejs-plain colored icon"></i>
-                        <i class="devicon-mysql-plain-wordmark colored icon"></i>
-                        <i class="devicon-php-plain colored icon"></i>
-                        <i class="devicon-java-plain-wordmark colored icon"></i>
-                        <i class="devicon-amazonwebservices-plain-wordmark colored icon"></i>
-                        <i class="devicon-wordpress-plain-wordmark colored icon"></i>
-                   </div>
+                <div class="about-section">
+                    <img id="about-image" src="assets/images/profile-pic.jpg">
+                    <p class="about-text">Hello, My name is Jacob Cadiente I am a Full Stack Web Developer based in Orlando, FL. I am a graduate
+                        of the UCF Coding Bootcamp and am currently working as a freelance web designer/developer</p>
                 </div>
             </div>
             <div class="col l6 m12 s12">
-                <img id="about-image" class="left responsive-img" src="./assets/images/profile-pic.jpg" alt="profile suit pic" style="margin-right: 20px;">
+                <div class="tools-section">
+                    <h4 id="tools-header">Tools</h4>
+                    <div class="row">
+                        <div class="col l6 m6 s6">
+                            <h6 class="toolbar">Front End</h6>
+                            <div class="divider"></div>
+                            <ul class="tool-list">
+                                <li class="tool">
+                                    <i class="devicon-html5-plain-wordmark colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-css3-plain-wordmark colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-javascript-plain colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-react-original-wordmark colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-bootstrap-plain-wordmark colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-wordpress-plain-wordmark colored icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l6 m6 s6">
+                            <h6 class="toolbar">Back End</h6>
+                            <div class="divider"></div>
+                            <ul class="tool-list">
+                                <li class="tool">
+                                    <i class="devicon-nodejs-plain colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-mysql-plain colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-php-plain colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-java-plain colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-amazonwebservices-plain colored icon"></i>
+                                </li>
+                                <li class="tool">
+                                    <i class="devicon-mongodb-plain colored icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- PROJECTS SECTION W/ PARALLAX -->
-    <div id="projects" class="parallax-container valign-wrapper">
-        <div class="container">
-            <div class="row">
-                <h2 class="thin-text white-text">Projects</h2>
-                <div class="divider"></div>
+    <div id="divider1">
+        <div class="container center-align">
+            <div class="row social-bar">
+                <a>
+                    <i class="fab fa-facebook social"></i>
+                </a>
+                <a>
+                    <i class="fab fa-instagram social"></i>
+                </a>
+                <a>
+                    <i class="fab fa-linkedin social"></i>
+                </a>
+                <a>
+                    <i class="fab fa-github social"></i>
+                </a>
             </div>
-            <div class="row">
-                <div class="col l4 s12">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/rpg-game.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Final Fantasy Game!
-                                <i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>
-                                <a class="waves-effect waves-light btn" href="../unit-4-game/index.html">Check it out!</a>
-                            </p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">About...
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Simple RPG game based on your favorite Final Fantasy characters! coded using HTML, CSS and JS!</p>
-                            <p>Tidus: star blitzball player from Zanarkand, and the son of major blitzball star Jecht.</p>
-                            <p>Noctis: Heir apparent to the Lucian throne, he wields spectral weapons which he forges from thin
-                                air
-                            </p>
-                            <p>Squall: A young and aloof SeeD mercenary, viewed as cold and focused he wields the gunblade Griever</p>
-                            <p>Cloud: wields the mighty Buster Sword, a skilled swordsman, he believes himself to be a member
-                                of SOLDIER, an elite warrior unit for Shinra.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l4 s12">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/food-finder.jpeg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Food Finder App
-                                <i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>
-                                <a class="waves-effect waves-light btn" href="../Project-One/index.html">Check it out!</a>
-                            </p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">About...
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Food Finder is an app that uses google API's to return random locations near the user's current
-                                location. Coded using Bootstrap, HTML, CSS, and jQuery the database store's a user's location
-                                as well as restaurants that they might want to try at a later time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l4 s12">
-                    <div class="card small">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/star-wars.jpg">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Star Wars Trivia!
-                                <i class="material-icons right">more_vert</i>
-                            </span>
-                            <p>
-                                <a class="waves-effect waves-light btn" href="../Trivia-game-2/index.html">Check it out!</a>
-                            </p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">About...
-                                <i class="material-icons right">close</i>
-                            </span>
-                            <p>Test your Star Wars knowledge with this trivia game programmed using HTML, CSS, and JavaScript</p>
-                            <br>
-                            <p>for the main trilogy and canon users choose the Disney catagory for questions more in line with
-                                disney continuity</p>
-                            <br>
-                            <p>For those looking for a challenge, Select the Legends catagory for more in depth questions about
-                                the lore of Star Wars!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="parallax">
-            <img src="./assets/images/forest.jpeg">
         </div>
     </div>
 
-    <!-- CONTACT FORM -->
-
-    <div id="contact" class="container">
-        <div class="row">
-            <h2 class="thin-text grey-text text-darken-2">Email Me</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                        <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input placeholder="Placeholder" id="last_name" type="text" class="validate">
-                        <label for="last_name">Last Name</label>
+    <!-- SERVICES SECTION -->
+    <div id="service" class="container services">
+        <h1 id="services-header">Services</h1>
+        <div class="divider"></div>
+        <div id="services-section" class="row">
+            <div class="col s12 m6">
+                <div class="card #000000 black service-left">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <i class="fas fa-desktop"></i>
+                        </span>
+                        <p>Front End UI/UX Design</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
+                <div class="card #000000 black service-left">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <i class="fas fa-server"></i>
+                        </span>
+                        <p>Back End Development</p>
                     </div>
                 </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Message</label>
-                            </div>
-                        </div>
-                    </form>
+            </div>
+            <div class="col s12 m6">
+                <div class="card #000000 black service-right">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <i class="fas fa-database"></i>
+                        </span>
+                        <p>Database Architecture</p>
+                    </div>
                 </div>
+                <div class="card #000000 black service-right">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <i class="fas fa-cloud"></i>
+                        </span>
+                        <p>Hosting/Site Maintenence</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    </div>
 
-    <!-- FOOTER -->
-
-    <footer id="services" class="page-footer grey darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Full Stack Web Development</h5>
-                    <h6 class="white-text">Services</h5>
-                        <ul>
-                            <li>
-                                <p class="grey-text text-lighten-3">Front End UI/UX Design</p>
-                            </li>
-                            <li>
-                                <p class="grey-text text-lighten-3">Back End Development</p>
-                            </li>
-                            <li>
-                                <p class="grey-text text-lighten-3">Database Architecture</p>
-                            </li>
-                            <li>
-                                <p class="grey-text text-lighten-3">Hosting/Site Maintenance</p>
-                            </li>
-                        </ul>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Table of Contents</h5>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#">About Me</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#">Projects</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="#">Contact</a>
-                        </li>
-                        <a class="grey-text text-lighten-3" href="#!">Services</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2018 Copyright Text
-            </div>
-        </div>
-    </footer>
     <!-- JQUERY CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Materialize JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!-- Main.js -->
-    <script type="text/javascript" src="./assets/main.js"></script>
+    <script src="./assets/main.js"></script>
 </body>
 
 </html>

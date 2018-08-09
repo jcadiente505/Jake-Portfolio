@@ -1,46 +1,81 @@
 body {
-    min-height: 200vh;
-    background-color: beige;
+    height: 400vh
 }
 
-#hero-par {
-    height: 600px;
-    overflow: hidden;
-    background-size: cover;
+#page-links {
+    text-align: center
 }
 
-.thin-text {
-      font-weight: 300;
-      padding: 20px;
-      border-radius: 10px;
+#job-title {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+.parallax-container {
+    height: 700px;
+}
+.par-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.card-image {
-    height: 200px; /* Your height here */
-    overflow: hidden;
+#services-section {
+    margin-top: 50px;
+}
+
+.services {
+    color: black;
+}
+
+.services-list {
+    display: inline-block;
 }
 
 #about-image {
-    position: absolute;
-    height: 500px;
     width: 400px;
-    left: 55%;
-    animation: slide 2s 1;
+    height: 400px;
 }
-@keyframes slide {
-    from { left: -150%; }
-    to { left: 55%; }
-}
-
-#services-list {
-    font-size: 20px
+.about-section {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
 }
 
 .icon {
-    font-size: 80px;
-    margin-top: 10px;
+    font-size: 55px;
 }
 
-.about-text {
-    font-size: 15px
+#tools-header {
+    text-align: center
+}
+
+.toolbar {
+    text-align: center
+}
+
+.tool-list {
+    text-align: center;
+    margin: 20px
+}
+
+.tool {
+    margin: 10px;
+}
+
+#divider1 {
+    background-color: black;
+    height: 100px;
+}
+
+.social {
+    color: white;
+    font-size: 3vw;
+    margin-left: 100px;
+    margin-right: 100px
+}
+
+.social-bar {
+    padding-top: 25px
 }
