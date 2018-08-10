@@ -54,7 +54,35 @@
         </li>
     </ul>
 
-    <!-- INTRODUCTION -->
+    <!-- FAB -->
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large black pulse">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating red">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating yellow darken-1">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating green">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating blue">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 
     <!-- PARALLAX DIVIDER -->
@@ -92,126 +120,120 @@
             </div>
             <div class="col l6 m12 s12">
                 <div class="tools-section">
-                    <h4 id="tools-header">Tools</h4>
+                    <h4 id="tools-header" class="animated">Tools</h4>
                     <div class="row">
                         <div class="col l6 m6 s6">
-                            <h6 class="toolbar">Front End</h6>
+                            <h6 id="front-end" class="animated toolbar">Front End</h6>
                             <div class="divider"></div>
                             <ul class="tool-list">
                                 <li class="tool">
-                                    <i class="devicon-html5-plain-wordmark colored icon"></i>
+                                    <i id="html" class="animated devicon-html5-plain-wordmark colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-css3-plain-wordmark colored icon"></i>
+                                    <i id="css" class="animated devicon-css3-plain-wordmark colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-javascript-plain colored icon"></i>
+                                    <i id="js" class="animated devicon-javascript-plain colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-react-original-wordmark colored icon"></i>
+                                    <i id="react" class="animated devicon-react-original-wordmark colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-bootstrap-plain-wordmark colored icon"></i>
+                                    <i id="bootstrap" class="animated devicon-bootstrap-plain-wordmark colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-wordpress-plain-wordmark colored icon"></i>
+                                    <i id="wordpress" class="animated devicon-wordpress-plain-wordmark colored icon"></i>
                                 </li>
                             </ul>
                         </div>
                         <div class="col l6 m6 s6">
-                            <h6 class="toolbar">Back End</h6>
+                            <h6 id="back-end" class="animated toolbar">Back End</h6>
                             <div class="divider"></div>
                             <ul class="tool-list">
                                 <li class="tool">
-                                    <i class="devicon-nodejs-plain colored icon"></i>
+                                    <i id="node" class="animated devicon-nodejs-plain colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-mysql-plain colored icon"></i>
+                                    <i id="mysql" class="animated devicon-mysql-plain colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-php-plain colored icon"></i>
+                                    <i id="php" class="animated devicon-php-plain colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-java-plain colored icon"></i>
+                                    <i id="java" class="animated devicon-java-plain colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-amazonwebservices-plain colored icon"></i>
+                                    <i id="aws" class="animated devicon-amazonwebservices-plain colored icon"></i>
                                 </li>
                                 <li class="tool">
-                                    <i class="devicon-mongodb-plain colored icon"></i>
+                                    <i id="mongo" class="animated devicon-mongodb-plain colored icon"></i>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="divider1">
-        <div class="container center-align">
-            <div class="row social-bar">
-                <div class="col l12 m12 s12">
-                    <a>
-                        <i class="fab fa-facebook social"></i>
-                    </a>
-                    <a>
-                        <i class="fab fa-instagram social"></i>
-                    </a>
-                    <a>
-                        <i class="fab fa-linkedin social"></i>
-                    </a>
-                    <a>
-                        <i class="fab fa-github social"></i>
-                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- SERVICES SECTION -->
-    <div id="service" class="container services">
-        <h1 id="services-header">Services</h1>
-        <div class="divider"></div>
-        <div id="services-section" class="row">
-            <div class="col s12 m6">
-                <div class="card #000000 black service-left">
-                    <div class="card-content white-text">
-                        <span class="card-title">
-                            <i class="fas fa-desktop"></i>
-                        </span>
-                        <p>Front End UI/UX Design</p>
+    <div id="service" class="parallax-container">
+        <div class="container services">
+            <h1 id="services-header">Services</h1>
+            <div class="divider"></div>
+            <div id="services-section" class="row">
+                <div class="col s12 m6">
+                    <div class="card #000000 black service-left center-align">
+                        <div class="card-content white-text">
+                            <span class="card-title">
+                                <i class="fas fa-desktop"></i>
+                            </span>
+                            <p>Front End UI/UX Design</p>
+                        </div>
+                    </div>
+                    <div class="card #000000 black service-left center-align">
+                        <div class="card-content white-text">
+                            <span class="card-title">
+                                <i class="fas fa-server"></i>
+                            </span>
+                            <p>Back End Development</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card #000000 black service-left">
-                    <div class="card-content white-text">
-                        <span class="card-title">
-                            <i class="fas fa-server"></i>
-                        </span>
-                        <p>Back End Development</p>
+                <div class="col s12 m6">
+                    <div class="card #000000 black service-right center-align">
+                        <div class="card-content white-text">
+                            <span class="card-title">
+                                <i class="fas fa-database"></i>
+                            </span>
+                            <p>Database Architecture</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="card #000000 black service-right">
-                    <div class="card-content white-text">
-                        <span class="card-title">
-                            <i class="fas fa-database"></i>
-                        </span>
-                        <p>Database Architecture</p>
-                    </div>
-                </div>
-                <div class="card #000000 black service-right">
-                    <div class="card-content white-text">
-                        <span class="card-title">
-                            <i class="fas fa-cloud"></i>
-                        </span>
-                        <p>Hosting/Site Maintenence</p>
+                    <div class="card #000000 black service-right center-align">
+                        <div class="card-content white-text">
+                            <span class="card-title">
+                                <i class="fas fa-cloud"></i>
+                            </span>
+                            <p>Hosting/Site Maintenence</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="parallax">
+            <img class="responsive-img" src="assets/images/black-top.jpg">
+        </div>
     </div>
+
+    <!-- PORTFOLIO SECTION -->
+    <div id="portfolio" class="container">
+        <h1 id="portfolio-header">Portfolio</h1>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
     </div>
 
     <!-- JQUERY CDN -->

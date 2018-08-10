@@ -4,17 +4,38 @@
 $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.fixed-action-btn').floatingActionButton();
     $('#job-title').waypoint(() => {
         console.log('waypoints!')
         $('#job-title').addClass('fadeInDown')
     }, { offset: '50%' });
     $('#about-section').waypoint(() => {
         console.log('waypoints!')
-        $('#about-section').addClass('fadeInLeft')
+        $('#about-section').css('opacity', 1)
+        $('#about-section').addClass('fadeInLeftBig')
+    }, { offset: '50%' });
+    $('#tools-header').waypoint(() => {
+        console.log('waypoints!')
+        $('#tools-header').css('opacity', 1)
+        $('#tools-header').addClass('fadeIn')
+    }, { offset: '50%' });
+    $('#front-end').waypoint(() => {
+        console.log('waypoints!')
+        $('#front-end').css('opacity', 1)
+        $('#front-end').addClass('fadeInLeftBig')
+    }, { offset: '50%' });
+    $('#back-end').waypoint(() => {
+        console.log('waypoints!')
+        $('#back-end').css('opacity', 1)
+        $('#back-end').addClass('fadeInRightBig')
     }, { offset: '50%' });
     $('.page-link').waypoint(() => {
         console.log('waypoints!')
         $('.page-link').addClass('bounceIn')
+    }, { offset: '50%' });
+    $('.icon').waypoint(() => {
+        console.log('waypoints!')
+        $('.icon').addClass('fadeInRightBig')
     }, { offset: '50%' });
 });
 
