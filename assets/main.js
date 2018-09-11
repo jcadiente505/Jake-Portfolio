@@ -1,6 +1,6 @@
 
 
-// PARALLAX
+// ===============  PAGE FUNCTIONS ================ //
 $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.parallax').parallax();
@@ -69,5 +69,3 @@ $('a[href*="#"]')
             }
         }
     });
-
-
