@@ -30,6 +30,14 @@ $(document).ready(function () {
     $('.icon').waypoint(() => {
         $('.icon').addClass('fadeIn')
     }, { offset: '50%' });
+    var $grid = $('.grid').isotope({
+        // options
+      });
+
+      $('.filter-button-group').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
 });
 
 // PAGE SCROLL

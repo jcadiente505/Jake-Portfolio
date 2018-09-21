@@ -103,6 +103,18 @@ input {
     color: black;
 }
 
+.element-item { 
+    width: 33.3%;
+}
+
+.gallery {
+    margin: 35px;
+}
+
+/* .grid {
+    margin-left: 125px;
+} */
+
 @media only screen and (max-width: 600px) {
     #service {
         height: 700px;

@@ -114,8 +114,8 @@
             <div class="col l6 m12 s12">
                 <div id="about-section" class="center-align animated">
                     <img id="about-image" class="responsive-img" src="assets/images/profile-pic.jpg">
-                    <p class="about-text">Hello, My name is Jacob Cadiente I am a Full Stack Web Developer based in Orlando, FL. I am a graduate
-                        of the UCF Coding Bootcamp and am currently working as a freelance web designer/developer</p>
+                    <p class="about-text">Hello, My name is Jacob Cadiente I am a Full Stack Web Developer based in Orlando,
+                        FL. I am a graduate of the UCF Coding Bootcamp and am currently working as a freelance web designer/developer</p>
                 </div>
             </div>
             <div class="col l6 m12 s12">
@@ -229,8 +229,19 @@
     <div id="portfolio" class="container">
         <h1 id="portfolio-header">Portfolio</h1>
         <div class="divider"></div>
-        <div class="row">
-            <div class="col l4 s12">
+
+        <div class="button-group filter-button-group center-align gallery">
+            <button class="btn waves-effect waves-light" data-filter="*">show all</button>
+            <button class="btn waves-effect waves-light" data-filter=".javascript">Javascript</button>
+            <button class="btn waves-effect waves-light" data-filter=".react">React.js</button>
+            <button class="btn waves-effect waves-light" data-filter=".node">Node.js</button>
+            <button class="btn waves-effect waves-light" data-filter=".fullStack">Full Stack</button>
+            <button class="btn waves-effect waves-light" data-filter=".database">mySQL & MongoDB</button>
+
+        </div>
+
+        <div class="grid center-align">
+            <div class="element-item transition javascript">
                 <div class="card small #000000 black">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator responsive-img" src="./assets/images/rpg-game.jpg">
@@ -249,12 +260,12 @@
                         </span>
                         <p>A RPG Game utilizing JS, jQuery, HTML5, CSS3.</p>
                         <br>
-                        <p>Play as one of your favorite, Final Fantasy characters from the beloved series and relive your memories
-                            in this simple adaptation of the dissidia franchise!</p>
+                        <p>Play as one of your favorite, Final Fantasy characters from the beloved series and relive your
+                            memories in this simple adaptation of the dissidia franchise!</p>
                     </div>
                 </div>
             </div>
-            <div class="col l4 s12">
+            <div class="element-item transition javascript">
                 <div class="card small #000000 black">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator responsive-img" src="./assets/images/star-wars.jpg">
@@ -273,39 +284,12 @@
                         </span>
                         <p>A Trivia Game utilizing JS, jQuery, HTML5, CSS3.</p>
                         <br>
-                        <p>Test your Star Wars knowledge with this trivia game, answer questions based on disney canon or attempt
-                            the real challenge with the legends catagory!</p>
+                        <p>Test your Star Wars knowledge with this trivia game, answer questions based on disney canon or
+                            attempt the real challenge with the legends catagory!</p>
                     </div>
                 </div>
             </div>
-            <div class="col l4 s12">
-                <div class="card small #000000 black">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator responsive-img" src="./assets/images/fine-dine.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator">Food Finder App
-                            <i class="material-icons right">more_vert</i>
-                        </span>
-                        <p>
-                            <a href="https://hidden-oasis-78659.herokuapp.com/">View Site</a>
-                        </p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">More Info
-                            <i class="material-icons right">close</i>
-                        </span>
-                        <p>A Full Stack web application using Node.js, Express, mySQL, Sequelize, and more</p>
-                        <br>
-                        <p>A full stack app that uses your location too find nearby restaurants at random and is able to store
-                            them into a database for you to try later. Perfect for when you just cant figure out where to
-                            go eat!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col l4 s12">
+            <div class="element-item transition database node">
                 <div class="card small #000000 black">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator responsive-img" src="./assets/images/express.jpg">
@@ -328,7 +312,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col l4 s12">
+            <div class="element-item transition fullStack node database">
+                <div class="card small #000000 black">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator responsive-img" src="./assets/images/fine-dine.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator">Food Finder App
+                            <i class="material-icons right">more_vert</i>
+                        </span>
+                        <p>
+                            <a href="https://hidden-oasis-78659.herokuapp.com/">View Site</a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">More Info
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>A Full Stack web application using Node.js, Express, mySQL, Sequelize, and more</p>
+                        <br>
+                        <p>A full stack app that uses your location too find nearby restaurants at random and is able to
+                            store them into a database for you to try later. Perfect for when you just cant figure out where
+                            to go eat!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="element-item transition react node">
                 <div class="card small #000000 black">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator responsive-img" src="./assets/images/react-app.jpeg">
@@ -347,32 +356,82 @@
                         </span>
                         <p>A Memory Game using React!</p>
                         <br>
-                        <p>A memory game built with React! Click on each image of a collection of Star Wars characters only once. See if you can get all 12!
+                        <p>A memory game built with React! Click on each image of a collection of Star Wars characters only
+                            once. See if you can get all 12!
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col l4 s12">
+            <div class="element-item transition react database node fullStack">
                 <div class="card small #000000 black">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator responsive-img" src="./assets/images/friend-img.jpeg">
+                        <img class="activator responsive-img" src="./assets/images/books-bookstore-book-reading-159711.jpeg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator">Friend Finder App
+                        <span class="card-title activator">React Reading List!
                             <i class="material-icons right">more_vert</i>
                         </span>
                         <p>
-                            <a href="https://safe-savannah-29183.herokuapp.com/">View Site</a>
+                            <a href="https://still-reef-71532.herokuapp.com/">View Site</a>
                         </p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">More Info
                             <i class="material-icons right">close</i>
                         </span>
-                        <p>A full stack web app built with Node.js, Express, HTML5, CSS3</p>
+                        <p>A Simple reading list app using React & React Router!</p>
                         <br>
-                        <p>Friend Finder pairs you with like-minded people based on answers from a set of questions, add an
-                            image for when someone else pairs with you!</p>
+                        <p>Check out some of my favorite book titles and add some of your own! hosted on Heroku using MongoDB,
+                            React, React Router and Node.js
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="element-item transition database node">
+                <div class="card small #000000 black">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator responsive-img" src="./assets/images/abstract-barbeque-bbq-beauty-161675.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator">Burger Devourer!
+                            <i class="material-icons right">more_vert</i>
+                        </span>
+                        <p>
+                            <a href="https://whispering-shelf-37786.herokuapp.com/">View Site</a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">More Info
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>A mySQL database application to practice Sequelize!</p>
+                        <br>
+                        <p>Create a list of burgers and eat or remove them, The burgers are stored in a persistent mySQL database. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="element-item transition node">
+                <div class="card small #000000 black">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator responsive-img" src="./assets/images/giphy-img.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator">Giphy API!
+                            <i class="material-icons right">more_vert</i>
+                        </span>
+                        <p>
+                            <a href="https://jcadiente505.github.io/Giphy-API/">View Site</a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">More Info
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>A Node.js app for API calls to the Giphy site!</p>
+                        <br>
+                        <p>Search an Actor's name and generate gif's pulled from the Giphy API. Click on the images to pause and play the gif 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -433,6 +492,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <!-- WayPoints -->
     <script src="assets/jquery.waypoints.min.js"></script>
+    <!-- Isotope Gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="./assets/main.js"></script>
 </body>
 
