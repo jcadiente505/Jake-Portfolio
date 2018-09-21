@@ -111,6 +111,10 @@ input {
     margin: 35px;
 }
 
+.isotope {
+    background-color: black;
+}
+
 /* .grid {
     margin-left: 125px;
 } */
@@ -118,5 +122,21 @@ input {
 @media only screen and (max-width: 600px) {
     #service {
         height: 700px;
+    }
+
+    .gallery {
+        margin: 0px;
+        text-align: center;
+        display: inline-table
+    }
+
+    .isotope {
+        background-color: black;
+        margin: 5px;
+        
+    }
+
+    .element-item { 
+        width: 100%;
     }
 } 
