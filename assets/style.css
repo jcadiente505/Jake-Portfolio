@@ -119,6 +119,11 @@ input {
     margin-left: 125px;
 } */
 
+.page-footer {
+    margin-top: 50px;
+    background-color: black;
+}
+
 @media only screen and (max-width: 600px) {
     #service {
         height: 700px;
