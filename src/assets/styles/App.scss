@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+// IMPORT SCSS FILES
+@import './vendors/typography.scss';
+@import './components/navbar.scss';
+@import './vendors/animations.scss';
