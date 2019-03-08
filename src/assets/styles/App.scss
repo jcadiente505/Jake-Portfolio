@@ -4,7 +4,10 @@ body {
     margin: 0;
 }
 
-// IMPORT SCSS FILES
-@import './vendors/typography.scss';
+// COMPONENT FILES
 @import './components/navbar.scss';
+@import './components/landing.scss';
+@import './components/hero.scss';
+// VENDOR FILES
+@import './vendors/typography.scss';
 @import './vendors/animations.scss';

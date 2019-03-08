@@ -1,0 +1,77 @@
+@import '../vendors/typography.scss';
+
+@function colors($color-name) {
+    @return map-get($colors, $color-name);
+};
+
+@function text($type) {
+    @return map-get($textStyle, $type);
+};
+
+@mixin strokeAnimation($array, $offset) {
+    stroke-dasharray: $array;
+    stroke-dashoffset: $offset;
+}
+
+@mixin offsetAnimation($old, $letter) {
+    @keyframes #{$letter} {
+        from {stroke-dashoffset: $old;}
+
+        to {stroke-dashoffset: 0px;}
+    }
+}
+
+.hero-section {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 20%;
+    left: 37%;
+}
+
+#J, #C, #Divide, #Border {
+    stroke: white;
+    stroke-width: 1px;
+    fill-opacity: 0;
+}
+
+#J {
+    @include strokeAnimation(781px, -781px);
+    animation: J .75s linear 0s forwards, fillIn .5s linear 2.4s forwards, strokeFade .5s linear 2.4s forwards;
+}
+#C {
+    @include strokeAnimation(926px, -926px);
+    animation: C .75s linear .5s forwards, fillIn .5s linear 2.4s forwards, strokeFade .5s linear 2.4s forwards;
+}
+#Divide {
+    @include strokeAnimation(525px, -525px);
+    animation: Divide .75s linear 1s forwards, fillIn .5s linear 2.4s forwards, divideFade .5s linear 2s forwards;
+}
+#Border {
+    @include strokeAnimation(1792px, -1792px);
+    animation: Border .75s linear 1.5s forwards, fillIn .5s linear 2.4s forwards, divideFade .5s linear 2.4s forwards;
+}
+
+// KEYFRAMES
+@include offsetAnimation(-781px, J);
+@include offsetAnimation(-926px, C);
+@include offsetAnimation(-525px, Divide);
+@include offsetAnimation(-1792px, Border);
+
+@keyframes fillIn {
+    from {fill-opacity: 0}
+
+    to {fill-opacity: 1}
+}
+
+@keyframes strokeFade {
+    from {stroke: white;}
+
+    to {stroke: black;}
+}
+
+@keyframes divideFade {
+    from {stroke: white;}
+
+    to {stroke: url(#_Linear2);}
+}
