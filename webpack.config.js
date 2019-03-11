@@ -2,6 +2,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import GhPagesWebpackPlugin from 'gh-pages-webpack-plugin';
 
 module.exports = {
   entry: path.join(__dirname,'src','index.js'),
@@ -47,6 +48,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
+    }),
+    new GhPagesWebpackPlugin({
+      path: path.join(__dirname,'build')
     })
   ]
 };
