@@ -1,0 +1,55 @@
+@keyframes fadeDown {
+    from {transform: translateY(-30px); opacity: 0}
+
+    to {transform: translateY(0px); opacity: 1};
+}
+
+@keyframes fadeUp {
+    from {transform: translateY(30px); opacity: 0}
+
+    to {transform: translateY(0px); opacity: 1};
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+
+    to {opacity: 1}
+}
+
+@keyframes fillIn {
+    from {fill-opacity: 0}
+
+    to {fill-opacity: 1}
+}
+
+@keyframes strokeFade {
+    from {stroke: white;}
+
+    to {stroke: black;}
+}
+
+@keyframes divideFade {
+    from {stroke: white;}
+
+    to {stroke: url(#_Linear2);}
+}
+@keyframes anim-lightspeed-in {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@mixin stagger-anim-delay($i, $initial-delay, $stagger-delay) {
+    @while $i > 0 {
+      &:nth-of-type(#{$i}) {
+        animation-delay: $initial-delay + $stagger-delay * $i;
+      }
+      $i: $i - 1;
+    }
+}
+

@@ -1,0 +1,52 @@
+@import '../vendors/typography.scss';
+@import '../vendors/responsive.scss';
+@import '../vendors/animations.scss';
+
+
+.card {
+    width: 500px;
+    height: 100%;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 15vh;
+
+    .card-image {
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .card-content {
+        
+        h2 {
+            font-family: text(header);
+            text-align: center;
+            margin: 2.5%;
+        }
+
+        p {
+            font-family: text(mainText);
+            text-align: center;
+            margin: 2.5%;
+        }
+    }
+
+    .card-tools {
+        
+        ul {
+            margin: 2.5% 0 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                list-style-type: none;
+                display: inline;
+                font-size: 3rem;
+                margin-left: 6%;
+            }
+        }
+    }
+}
+

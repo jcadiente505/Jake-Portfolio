@@ -6,7 +6,7 @@ const Navbar = props => {
             <h1>Jacob Cadiente</h1>
             <div className="nav-menu">
                 <div className="svg-wrapper">
-                    <a href="#">
+                    <a href="#about">
                         <svg height="40" width="120" xmlns="http://www.w3.org/2000/svg">
                             <rect className="shape" height="40" width="120" />
                             <text x="25" y="25" fill="#fff">About Me</text>
@@ -14,7 +14,7 @@ const Navbar = props => {
                     </a>
                 </div>
                 <div className="svg-wrapper">
-                    <a href="#">
+                    <a href="#portfolio">
                         <svg height="40" width="120" xmlns="http://www.w3.org/2000/svg">
                             <rect className="shape" height="40" width="120" />
                             <text x="30" y="25" fill="#fff">Portfolio</text>

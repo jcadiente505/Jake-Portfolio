@@ -1,25 +1,40 @@
 @import '../vendors/typography.scss';
+@import '../vendors/responsive.scss';
+@import '../vendors/animations.scss';
 
-@function colors($color-name) {
-    @return map-get($colors, $color-name);
-};
+// @function colors($color-name) {
+//     @return map-get($colors, $color-name);
+// };
 
-@function text($type) {
-    @return map-get($textStyle, $type);
-};
+// @function text($type) {
+//     @return map-get($textStyle, $type);
+// };
 
 
 .nav-wrapper{
+  z-index: 2;
     display: flex;
     flex-direction: row;
     background: colors(gradient);
     padding: 15px 55px;
     position: sticky;
     top: 0;
+    opacity: 0;
+    animation: fadeDown 1s linear 2.2s forwards;
+
+    @include respond-below(sm) {
+      flex-wrap: wrap;
+      padding: 0;
+      padding-top: 10px;
+    }
 
     h1 {
         font-family: text(header);
         margin: 0;
+
+        @include respond-below(sm) {
+          margin: 0 auto;
+        }
     }
 
     .nav-menu {
@@ -28,15 +43,19 @@
         display: flex;
         flex-direction: row;
         position: absolute;
-        right: 100px;
-        top: 13px;
+        right: 5%;
         padding: 0;
         text-align: center;
+
+        @include respond-below(sm) {
+          margin: 0 auto;
+          position: relative;
+          right: 0%
+        }
+
     } 
     
     .svg-wrapper {
-      position: relative;
-      top: 50%;
       margin: 0 auto;
       width: 120px;  
     }

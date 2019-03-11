@@ -8,3 +8,11 @@ $textStyle: (
     header: "Montserrat",
     mainText: "Open Sans",
 );
+
+@function colors($color-name) {
+    @return map-get($colors, $color-name);
+};
+
+@function text($type) {
+    @return map-get($textStyle, $type);
+};

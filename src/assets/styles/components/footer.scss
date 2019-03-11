@@ -1,0 +1,54 @@
+@import '../vendors/typography.scss';
+@import '../vendors/responsive.scss';
+@import '../vendors/animations.scss';
+
+.footer-section {
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .personal, .social {
+            list-style-type: none;
+            font-family: text(mainText);
+        }
+        .personal {
+            display: flex;
+            width: 100%;
+            padding: 0;
+            margin: 2.5% 5%;
+            font-size: 15px;
+            justify-content: space-evenly;
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 0;
+            margin: 0% 10%;
+            font-size: 30px;
+            color: white;
+            transform: translateY(0px);
+            transition: 1s ease-in;
+
+            #fb:hover {
+                color: #3b5998;
+                transform: translateY(-10px);
+            }
+            #ig:hover {
+                color: #c32aa3;
+                transform: translateY(-10px);
+            }
+            #li:hover {
+                color: #007bb5;
+                transform: translateY(-10px);
+            }
+            #gh:hover {
+                color:#000000;
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
