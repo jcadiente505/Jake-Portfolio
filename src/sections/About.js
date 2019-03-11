@@ -64,43 +64,43 @@ const About = props => {
           tools={card4}
         />
       </div>
-      <div data-aos="fade-left" className="charts">
+      <div data-aos="fade-right" className="charts">
         <div className="chart chart--dev">
           <span className="chart__title">Development</span>
           <ul className="chart--horiz">
-            <li data-aos="fade-left" className="chart__bar" style={{width: "98%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "98%"}}>
               <span className="chart__label">HTML5</span>
               <span className="percentage">98%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "90%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "90%"}}>
               <span className="chart__label">CSS3 & Sass</span>
               <span className="percentage">90%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "80%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "80%"}}>
               <span className="chart__label">Javascript</span>
               <span className="percentage">80%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "75%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "75%"}}>
               <span className="chart__label">React.js</span>
               <span className="percentage">75%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "80%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "80%"}}>
               <span className="chart__label">Node.js</span>
               <span className="percentage">80%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "50%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "50%"}}>
               <span className="chart__label">Wordpress</span>
               <span className="percentage">50%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "60%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "60%"}}>
               <span className="chart__label">Docker/Vagrant</span>
               <span className="percentage">60%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "70%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "70%"}}>
               <span className="chart__label">SQL</span>
               <span className="percentage">70%</span>
             </li>
-            <li data-aos="fade-left" className="chart__bar" style={{width: "50%"}}>
+            <li data-aos="fade-right" className="chart__bar" style={{width: "50%"}}>
               <span className="chart__label">Webpack</span>
               <span className="percentage">50%</span>
             </li>
