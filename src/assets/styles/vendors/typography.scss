@@ -1,0 +1,18 @@
+$colors: (
+    primary: #00e5ff,
+    accent: #B11CB9,
+    gradient: linear-gradient(to right, #00e5ff, #00c6ff, #00a1ff, #7070f5, #b11cb9)
+);
+
+$textStyle: (
+    header: "Montserrat",
+    mainText: "Open Sans",
+);
+
+@function colors($color-name) {
+    @return map-get($colors, $color-name);
+};
+
+@function text($type) {
+    @return map-get($textStyle, $type);
+};

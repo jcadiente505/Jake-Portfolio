@@ -1,0 +1,18 @@
+@import '../vendors/animations.scss';
+@import '../vendors/responsive.scss';
+@import '../vendors/typography.scss';
+
+.section-header {
+    font-family: text(header);
+    padding: 0% 10%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.divider {
+    height: 1.5px;
+    width: 75%;
+    display: flex;
+    background: colors(gradient);
+    margin-left: 13%;
+}

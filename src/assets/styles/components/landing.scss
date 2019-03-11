@@ -1,0 +1,15 @@
+@import '../vendors/responsive.scss';
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+
+    canvas {
+        @include respond-below(lg) {
+            display: none;
+        }
+    }
+}
